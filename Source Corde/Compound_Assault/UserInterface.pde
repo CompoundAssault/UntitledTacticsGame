@@ -20,9 +20,9 @@ class UserInterface{
   
   //Constructor
   UserInterface(){
-  i_window = new InfoWindow(0,0 , 0);
-  b_window = new BoardWindow(350,0);
-  s_window = new SelectionScreen(350,0,2,4);
+  i_window = new InfoWindow(0,0 , 0, false);
+  b_window = new BoardWindow(350,0, false);
+  s_window = new SelectionScreen(350,0,2,4, false);
   tt = new Tooltip(352,400);
   
   }

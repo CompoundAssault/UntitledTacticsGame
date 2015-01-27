@@ -18,7 +18,7 @@ class BoardWindow{
   MysteryFog[][] m_fog = new MysteryFog[6][4];
   
   //Constructor
-  BoardWindow(float x, float y, boolean on;){
+  BoardWindow(float x, float y, boolean on){
   this.x = x;
   this.y = y;
   this.on = on;

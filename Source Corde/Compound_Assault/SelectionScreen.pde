@@ -27,7 +27,7 @@ class SelectionScreen{
   units = new Unitselect[a][b];
     for(int i = 0;i < a;i++){
       for(int j = 0;j<b;j++){
-      units[i][j] = new Unitselect(415+125*j,100+167*i, unitCounter);
+      units[i][j] = new Unitselect(415+125*j,100+167*i, unitCounter, false);
       unitCounter++;
       }
     }
