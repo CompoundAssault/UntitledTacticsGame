@@ -9,6 +9,7 @@ class Unitselect{
   int s = 0;
   int sw = 5;
   boolean playerCard;
+  boolean on;
   //PImage soldier;
   PImage unitPicture;
   PImage background_deploy;
@@ -17,10 +18,11 @@ class Unitselect{
   int unitNumber;
   String[] unitList = {"Soldier.png" , "Demo Guys.png" , "Linguist.png" , "Medic.png" , "The Heavy.png" , "The Leader.png" , "The Recon.png" , "The Technician.png"};
  
- Unitselect(int x,int y , int unitNumber){
+ Unitselect(int x,int y , int unitNumber, boolean on){
   this.x = x;
   this.y = y;
   this.unitNumber = unitNumber;
+  this.on = on;
  
   playerCard = false;
   unitPicture = loadImage(unitList[unitNumber]);

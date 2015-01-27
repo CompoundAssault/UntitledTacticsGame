@@ -14,12 +14,14 @@ class BoardWindow{
   float x;
   float y;
   PImage Board_graphic;
+  boolean on;
   MysteryFog[][] m_fog = new MysteryFog[6][4];
   
   //Constructor
-  BoardWindow(float x, float y){
+  BoardWindow(float x, float y, boolean on;){
   this.x = x;
   this.y = y;
+  this.on = on;
   Board_graphic = loadImage("CheckerBoardEX.png");
   
   //Assigns values for m_fog

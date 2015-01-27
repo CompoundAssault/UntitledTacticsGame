@@ -12,13 +12,15 @@ class SelectionScreen{
   Unitselect[][] units;
   PImage background_noDeploy;
   PImage background_deploy;
+  boolean on;
   
   
-  SelectionScreen(float x,float y,int a, int b){
+  SelectionScreen(float x,float y,int a, int b, boolean on){
   this.x = x;
   this.y = y;
   this.a = a;
   this.b = b;
+  this.on = on;
   
   int unitCounter = 0;
   startGame = false;

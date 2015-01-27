@@ -11,15 +11,17 @@ This is a child class of UserInterface.*/
 
 class InfoWindow{
   //Member Variables
+  boolean on;
   float x;
   float y;
   PImage unitCard;
   String[] cardList = {"Soldier PlayerCard.png" , "Demo Guy PlayerCard.png" , "The Linguist PlayerCard.png" , "The Medic PlayerCard.png" , "The Heavy PlayerCard.png" , "The Leader PlayerCard.png" , "Recon Expert PlayerCard.png" , "The Tech PlayerCard.png"};
   int cardNumber;
   //Constructor
-InfoWindow(float x, float y , int cardNumber){
+InfoWindow(float x, float y , int cardNumber, boolean on){
   this.x = x;
   this.y = y;
+  this.on = on;
   unitCard = loadImage(cardList[cardNumber]);
 }
 
