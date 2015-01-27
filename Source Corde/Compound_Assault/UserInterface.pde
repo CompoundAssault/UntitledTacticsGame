@@ -32,7 +32,7 @@ class UserInterface{
    
   
   i_window.drawWindow(); 
-  if(s_window.startGame == false){
+  if(s_window.startGame == false && s_window.on == true){
     
     s_window.drawWindow();
     s_window.nextButton();

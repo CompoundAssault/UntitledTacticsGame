@@ -56,7 +56,10 @@ void draw(){
 void mousePressed(){
  UI.b_window.showTile();
   titlescreen.menuInteraction();
+  if (UI.s_window.on == true)
+  {
   UI.s_window.menuInteraction();
+  }
   UI.s_window.finishSelect();
 }
 
