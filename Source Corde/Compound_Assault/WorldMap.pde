@@ -83,17 +83,23 @@ public WorldMap(boolean On)
      UI.m_window.On = false;
      UI.s_window.on = true;
     } 
-    else if((mouseX > 230 && mouseX < 310) && (mouseY >290 && mouseY < 370))
+    else if((mouseX > 230 && mouseX < 310) && (mouseY >290 && mouseY < 370) && this.mission1Beaten == true)
     {
       this.mission2Beaten = true;
+      UI.m_window.On = false;
+      UI.s_window.on = true;
     }
-    else if ((mouseX > 430 && mouseX < 510) && (mouseY >160 && mouseY < 240))
+    else if ((mouseX > 430 && mouseX < 510) && (mouseY >160 && mouseY < 240) && this.mission2Beaten == true)
     {
       this.mission3Beaten = true;
+      UI.m_window.On = false;
+      UI.s_window.on = true;
     }
-    else if ((mouseX > 630 && mouseX < 710) && (mouseY >360 && mouseY < 440))
+    else if ((mouseX > 630 && mouseX < 710) && (mouseY >360 && mouseY < 440) && this.mission3Beaten == true)
     {
       this.mission4Beaten = true;
+      UI.m_window.On = false;
+      UI.s_window.on = true;
      }  
     }
 }
