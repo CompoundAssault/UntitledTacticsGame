@@ -93,6 +93,7 @@ class SelectionScreen{
   void finishSelect(){
     if(mouseX > 740 && mouseX < 890 && mouseY > 410 && mouseY < 460){
       startGame = true;
+      UI.b_window.on = true;
     }
   }    
     

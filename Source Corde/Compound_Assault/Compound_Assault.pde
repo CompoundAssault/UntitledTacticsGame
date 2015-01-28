@@ -54,7 +54,10 @@ void draw(){
 
 //Logic for mouse clicks
 void mousePressed(){
+  if (UI.b_window.on == true)
+  {
  UI.b_window.showTile();
+  }
   titlescreen.menuInteraction();
   if (UI.s_window.on == true)
   {
