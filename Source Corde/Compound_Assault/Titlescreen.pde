@@ -80,7 +80,7 @@ class Titlescreen
           {
             println("start button works");
              On = false;
-             UI.s_window.on = true;
+             UI.m_window.On = true;
           }
           else if(mouseX > startColX && mouseX < endColX && mouseY > startColY + 50 && mouseY < endColY + 50)
           {

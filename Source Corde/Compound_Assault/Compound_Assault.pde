@@ -54,6 +54,10 @@ void draw(){
 
 //Logic for mouse clicks
 void mousePressed(){
+  if (UI.m_window.On == true)
+  {
+    UI.m_window.mapInteraction();
+  }
   if (UI.b_window.on == true)
   {
  UI.b_window.showTile();
@@ -62,7 +66,7 @@ void mousePressed(){
   if (UI.s_window.on == true)
   {
   UI.s_window.menuInteraction();
-  }
   UI.s_window.finishSelect();
+  }
 }
 

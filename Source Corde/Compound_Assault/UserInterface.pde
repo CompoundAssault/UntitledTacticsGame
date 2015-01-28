@@ -17,12 +17,14 @@ class UserInterface{
   BoardWindow b_window;
   Tooltip tt;
   InfoWindow i_window;
+  WorldMap m_window;
   
   //Constructor
   UserInterface(){
   i_window = new InfoWindow(0,0 , 0, false);
   b_window = new BoardWindow(350,0, false);
   s_window = new SelectionScreen(350,0,2,4, false);
+  m_window = new WorldMap(false);
   tt = new Tooltip(352,400);
   
   }
@@ -45,6 +47,10 @@ class UserInterface{
       }
     
     s_window.updateSelectionScreen();
+  }
+  else if(m_window.On == true)
+  {
+    m_window.drawMap();
   }
   else{
     b_window.drawWindow();
