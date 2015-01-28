@@ -32,12 +32,6 @@ background(100);
 //Set Variables;
 time = new Time();
 UI = new UserInterface();
-UI.b_window.m_fog[0][0].fog_enable = false;
-UI.b_window.m_fog[5][0].fog_enable = false; 
-UI.b_window.m_fog[0][3].fog_enable = false; 
-UI.b_window.m_fog[5][3].fog_enable = false; 
-UI.b_window.m_fog[2][0].fog_enable = false; 
-UI.b_window.m_fog[3][0].fog_enable = false; 
 titlescreen = new Titlescreen(true);
 }
 
