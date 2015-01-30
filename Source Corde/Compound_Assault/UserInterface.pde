@@ -41,6 +41,7 @@ class UserInterface{
       for(int i = 0;i < s_window.a;i++){
         for(int j = 0;j<s_window.b;j++){
           if(s_window.units[i][j].playerCard == true){
+           i_window.unitCard = loadImage(i_window.cardList[i][j]);
            i_window.drawPlayerCard(); 
           }
         }

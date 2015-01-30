@@ -15,14 +15,14 @@ class InfoWindow{
   float x;
   float y;
   PImage unitCard;
-  String[] cardList = {"Soldier PlayerCard.png" , "Demo Guy PlayerCard.png" , "The Linguist PlayerCard.png" , "The Medic PlayerCard.png" , "The Heavy PlayerCard.png" , "The Leader PlayerCard.png" , "Recon Expert PlayerCard.png" , "The Tech PlayerCard.png"};
+  String[][] cardList = {{"Soldier PlayerCard.png" , "Demo Guy PlayerCard.png" , "The Linguist PlayerCard.png" , "The Medic PlayerCard.png"} , {"The Heavy PlayerCard.png" , "The Leader PlayerCard.png" , "Recon Expert PlayerCard.png" , "The Tech PlayerCard.png"}};
   int cardNumber;
   //Constructor
 InfoWindow(float x, float y , int cardNumber, boolean on){
   this.x = x;
   this.y = y;
   this.on = on;
-  unitCard = loadImage(cardList[cardNumber]);
+  unitCard = loadImage(cardList[cardNumber][cardNumber]);
 }
 
  //Member Funcions
