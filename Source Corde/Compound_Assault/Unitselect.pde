@@ -14,6 +14,7 @@ class Unitselect{
   PImage unitPicture;
   PImage background_deploy;
   PImage background_noDeploy;
+  boolean is_selected;
  
   int unitNumber;
   String[] unitList = {"Soldier.png" , "Demo Guys.png" , "Linguist.png" , "Medic.png" , "The Heavy.png" , "The Leader.png" , "The Recon.png" , "The Technician.png"};
