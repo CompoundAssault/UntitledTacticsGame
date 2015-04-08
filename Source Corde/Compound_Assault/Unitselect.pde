@@ -33,7 +33,7 @@ class Unitselect{
      noFill();
      stroke(0,s,0);
    strokeWeight(sw);
-  rect(x,y,100,100); 
+  rect(x,y,100,100);
  }
  void nextButton(){
     background_noDeploy = loadImage("Selection Screen .png");

@@ -1,12 +1,16 @@
 class WorldMap{
 private String mission1 = "There seems to have been some sort of strange disturbance in the area: take a small team and check it out.";
 private String funds1 = "Funds: $1000";
+private int funds12 = 1000;
 private String mission2 = "The mission is simple: get in there and annihilate any of those creatures you find. Be prepared for moderate resistance, this seems to be seem sort of breeding ground for the creeps. Insane amount of text for the purpose of checking text box correctness ensuing now: begin The quick brown fox jumped over the lazy dog and then it jumped over another lazy dog and jumped over a third lazy dog. Hopefully this amount of text will nicely fill up the text box, but who knows, am I right? Cutoff at this point.";
 private String funds2 = "Funds: $1500";
+private int funds22 = 1500;
 private String mission3 = "We've located the area where the creatures seem to be coming from, we just need you to get there now.";
 private String funds3 = "Funds: $2000";
+private int funds32 = 2000;
 private String mission4 = "This is it: you've reached the gates of hell. Be prepared for anything, it doesn't look like the creatures will take kindly to having their portal shut down.";
 private String funds4 = "Funds: $3000";
+private int funds42 = 3000;
 private boolean mission1Beaten = false;
 private boolean mission2Beaten= false;
 private boolean mission3Beaten= false;
@@ -82,24 +86,28 @@ public WorldMap(boolean On)
      this.mission1Beaten = true;
      UI.m_window.On = false;
      UI.s_window.on = true;
+     UI.s_window.mapFunds = funds12;
     } 
     else if((mouseX > 230 && mouseX < 310) && (mouseY >290 && mouseY < 370) && this.mission1Beaten == true)
     {
       this.mission2Beaten = true;
       UI.m_window.On = false;
       UI.s_window.on = true;
+      UI.s_window.mapFunds = funds22;
     }
     else if ((mouseX > 430 && mouseX < 510) && (mouseY >160 && mouseY < 240) && this.mission2Beaten == true)
     {
       this.mission3Beaten = true;
       UI.m_window.On = false;
       UI.s_window.on = true;
+      UI.s_window.mapFunds = funds32;
     }
     else if ((mouseX > 630 && mouseX < 710) && (mouseY >360 && mouseY < 440) && this.mission3Beaten == true)
     {
       this.mission4Beaten = true;
       UI.m_window.On = false;
       UI.s_window.on = true;
+      UI.s_window.mapFunds = funds42;
      }  
     }
 }

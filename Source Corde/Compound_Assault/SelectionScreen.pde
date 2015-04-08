@@ -13,6 +13,7 @@ class SelectionScreen{
   PImage background_noDeploy;
   PImage background_deploy;
   boolean on;
+  int mapFunds;
   int lastSelected;
   
   
@@ -49,6 +50,8 @@ class SelectionScreen{
     stroke(0,0,0);
     strokeWeight(5);
     rect(400,410,150,50);
+    rect(400,25,150,50);
+    text("$" + Integer.toString(this.mapFunds), 475, 65);
     stroke(0,255,0);
     strokeWeight(6);
     for(int i = 0;i < a;i++){
@@ -69,6 +72,7 @@ class SelectionScreen{
   {
     if(mouseX > 400 && mouseX < 550 && mouseY > 410 && mouseY < 460){
       System.out.println("Pressed the upgrade button");
+      this.mapFunds -= 200; //Placeholder for upgrade cost
     }
     stroke(0,255,0);
     strokeWeight(6);
